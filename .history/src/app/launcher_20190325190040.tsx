@@ -1,0 +1,108 @@
+import yj from 'yuejia/typings';
+import * as React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import axios from 'axios';
+import global from 'yuejia/app/global';
+// import PageStack from 'yuejia/component/PageStack';
+// import Model, { Context } from 'yuejia/component/Model';
+import ImgView from 'yuejia/component/ImgView';
+import { WeiXin } from 'yuejia/app/weixin';
+// import Behavior from 'yuejia/model/behavior';
+import Request from 'yuejia/app/request';
+// import model from './model';
+import config from './config';
+import Home from './view/pages/Home/index';
+// import Nav from './view/pages/Nav/index';
+import Button, { Props as ButtonProps } from 'yuejia/component/Button';
+
+global.routes = [
+  <Route exact key="页面名称" path="路由" component={Home} />,
+];
+
+global.appRoute = (props: yj.PageProps<any>) => (
+  <Switch location={props.location}>
+    {global.routes}
+  </Switch>
+);
+// interface Props {
+// }
+
+interface State {
+  complete: boolean;
+  state: ButtonProps['state'];
+}
+
+class App extends React.Component<any> {
+  constructor(props: any) {
+    super(props);
+
+    axios.defaults.baseURL = config.variable.app.baseURL;
+    ImgView.defaultHost = config.variable.app.imgHost;
+    // 行为记录需要帐户系统的数据模型
+    // Behavior.options = {
+    //   ...config.variable.behavior,
+    //   account: model.account
+    // };
+    Request.defaultData = {
+      userCacheId: config.variable.app.userCacheId,
+      wxConfigId: config.variable.app.wxConfigId
+    };
+    Request.defaultParams = {
+      userCacheId: config.variable.app.userCacheId,
+      wxConfigId: config.variable.app.wxConfigId
+    };
+    WeiXin.options = config.variable.wx;
+
+    // 获取用户信息
+    // if (model.account.getRequest) {
+    //   model.account.getRequest.send();
+    // }
+  }
+  public state: State = {
+    complete: false,
+    state: undefined
+  };
+
+  private toggleComplete = () => {
+    this.setState({
+      complete: !this.state.complete
+    });
+  }
+
+  // private toggleState = () => {
+  //   this.setState({
+  //     state: 'loading'
+  //   });
+  // }
+
+  public render(): JSX.Element {
+    return (
+      // <Model>
+      //   {(value) => (
+      //     <Context.Provider value={value}>
+      //       <HashRouter>
+      //         <PageStack />
+      //         <Nav />
+      //       </HashRouter>
+      //     </Context.Provider>
+      //   )}
+      // </Model>
+      <div>
+        this is a test
+        <Button
+          complete={this.state.complete}
+          onClick={this.toggleComplete}
+          style={{
+            backgroundColor: 'yellow',
+          }}
+          // 只有submit类型的才会起效
+          htmlType="submit"
+        >
+        dmji
+        </Button>
+      </div>
+    );
+  }
+}
+
+export default App;

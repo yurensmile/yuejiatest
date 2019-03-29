@@ -1,0 +1,38 @@
+{
+  "name": "yuejia-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&&webpack --env development --mode development --watch --progress --color --display-error-details",
+    "pro": "set NODE_ENV=production&&webpack --env production --mode production --progress --color --display-error-details",
+    "pre": "set NODE_ENV=prerelease&&webpack --env prerelease --mode production --progress --color --display-error-details"
+  },
+  "author": "",
+  "license": "ISC",
+  "router": {
+    "autoCreate": false,
+    "codeSplitting": true,
+    "mode": "HashRouter",
+    "module": [
+      {
+        "name": "",
+        "indexRouter": "Home"
+      }
+    ]
+  },
+  "dependencies": {
+    "core-js": "^2.5.1",
+    "react-loadable": "^5.3.1",
+    "webpack-dev-server": "^3.2.1",
+    "yuejia": "^0.8.31",
+    "yuejia-cli": "^0.7.5"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/react-loadable": "^4.0.4",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
+    "http-server": "^0.10.0"
+  }
+}

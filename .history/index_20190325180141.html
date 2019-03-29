@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <title>悦家</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script>
+      // 仅用于开发环境和预发布环境，正式环境直接引用
+      (function() {
+        const scriptTime = new Date().getTime();
+        const head = document.getElementsByTagName('head')[0];
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'build/css/index_1.0.0.css?time=' + scriptTime;
+        head.appendChild(link);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="reactRoot">this is a test</div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="./node_modules/yuejia/vender/vendor.js"></script>
+    <script>
+      // 仅用于开发环境和预发布环境，正式环境直接引用
+      (function() {
+        const scriptTime = new Date().getTime();
+        const body = document.getElementsByTagName('body')[0];
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'build/js/index_1.0.0.js?time=' + scriptTime;
+        body.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
