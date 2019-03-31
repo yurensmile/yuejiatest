@@ -1,0 +1,35 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  };
+  .background {
+    color: white;
+    position: relative;
+    .buildingInfo{
+      position: absolute;
+      left: 18px;
+      bottom: 46px;
+      .tag{
+        display: inline-block;
+        margin-right: 8px;
+        background-color: #ff4a4a;
+        padding: 4px 6px 5px;
+        box-sizing: border-box;
+        border-radius: 3px
+      }
+    }
+  }
+
+}

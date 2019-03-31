@@ -1,0 +1,31 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  .func{
+    dl,dd,dt{
+      display: inline;
+    };
+  .icon1{
+    background-image: url(../../../../assets/img/look.png);
+  };
+  .icon2{
+    background-image: url(../../../../assets/img/VR.png);
+  }
+  .icon3{
+    background-image: url(../../../../assets/img/calc.png);
+  }
+  .icon4{
+    background-image: url(../../../../assets/img/service.png);
+  }
+  };
+}

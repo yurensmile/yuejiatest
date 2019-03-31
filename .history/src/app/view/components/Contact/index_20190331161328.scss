@@ -1,0 +1,126 @@
+.component {
+  background: #fff;
+  position: relative;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  };
+  .background {
+    color: white;
+    // position: relative;
+    .buildingInfo{
+      position: absolute;
+      left: 18px;
+      bottom: 46px;
+      .tag{
+        display: inline-block;
+        margin-right: 8px;
+        background-color: #ff4a4a;
+        padding: 4px 6px 5px;
+        box-sizing: border-box;
+        border-radius: 3px
+      }
+    }
+  }
+  .buildingPrice{
+    position: absolute;
+    bottom: -33px;
+    width: 363px;
+    height: 87px;
+    background-image: url(../../../../assets/img/back.png);
+    background-repeat: no-repeat;
+  }
+  .func{
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    width: 335px;
+    height: 118px;
+    -moz-box-shadow:0px 0px 6px #B0ACB0; -webkit-box-shadow:0px 0px 6px #B0ACB0; box-shadow:0px 0px 6px #B0ACB0;
+    border-radius: 10px;
+    dl{
+      margin-top: 30px;
+    };
+    dt{
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .icon1, .icon2, .icon3, .icon4 {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+      margin-bottom: 8px;
+    } 
+    .icon1{
+      background-image: url(../../../../assets/img/air-look.png);
+    };
+    .icon2{
+      background-image: url(../../../../assets/img/720.png);
+    };
+    .icon3{
+      background-image: url(../../../../assets/img/calc.png);
+      margin-left: 11px;
+    };
+    .icon4{
+      background-image: url(../../../../assets/img/service.png);
+      margin-left: 6px;
+    };
+  }
+  .footer{
+    position: absolute;
+    top: 669px;
+    left: 20px;
+    .contact{
+      color: black;
+      display: -webkit-flex;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 60px;
+
+      .people{
+        background-color: white;
+        width: 200px;
+        .info{
+          position: relative;
+          top: 13px;
+          left: 5px;
+          .tel{
+            font-size: 16px;
+            position: relative;
+            top: 9px;
+          }
+        };
+        .profession{
+          font-size: 12px;
+        }
+        p{
+          margin-top: 62px;
+        }
+        strong{
+          font-size: 20px;
+        }
+      }
+      .qrcode{
+        background-color: white;
+        margin-left: 65px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  };
+  .background {
+    position: relative;
+    .buildingInfo{
+
+    }
+  }
+
+}

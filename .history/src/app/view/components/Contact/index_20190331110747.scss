@@ -1,0 +1,69 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  };
+  .background {
+    color: white;
+    position: relative;
+    .buildingInfo{
+      position: absolute;
+      left: 18px;
+      bottom: 46px;
+      .tag{
+        display: inline-block;
+        margin-right: 8px;
+        background-color: #ff4a4a;
+        padding: 4px 6px 5px;
+        box-sizing: border-box;
+        border-radius: 3px
+      }
+    }
+  }
+
+  .footer{
+    position: relative;
+    .func{
+      position: absolute;
+      width: 335px;
+      height: 118px;
+      margin: 0 auto;
+      dt{
+        display: inline-block;
+      }
+      .icon1, .icon2, .icon3, .icon4 {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      } 
+      .icon1{
+        background-image: url(../../../../assets/img/air-look.png);
+      };
+      .icon2{
+        background-image: url(../../../../assets/img/720.png);
+      };
+      .icon3{
+        background-image: url(../../../../assets/img/calc.png);
+      };
+      .icon4{
+        background-image: url(../../../../assets/img/service.png);
+      };
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  .func{
+    dl,dd,dt{
+      display: inline;
+    };
+    img {
+      width: 40px;
+    }
+  };
+}

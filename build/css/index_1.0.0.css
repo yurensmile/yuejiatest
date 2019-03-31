@@ -656,6 +656,180 @@ blockquote {
 }
 .component_2BhVN {
   background: #fff;
+  position: relative;
+}
+
+.component_2BhVN dl, .component_2BhVN dt, .component_2BhVN dd, .component_2BhVN img, .component_2BhVN ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.component_2BhVN ol, .component_2BhVN ul {
+  list-style: none;
+}
+
+.component_2BhVN li {
+  display: inline;
+}
+
+.component_2BhVN .background_XGouM {
+  color: white;
+}
+
+.component_2BhVN .background_XGouM .buildingInfo_bZHeH {
+  position: absolute;
+  left: 18px;
+  bottom: 46px;
+}
+
+.component_2BhVN .background_XGouM .buildingInfo_bZHeH .tag_2rJRg {
+  display: inline-block;
+  margin-right: 8px;
+  background-color: #ff4a4a;
+  padding: 4px 6px 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.component_2BhVN .buildingPrice_1U0HY {
+  position: absolute;
+  left: 10px;
+  bottom: -34px;
+}
+
+.component_2BhVN .buildingPrice_1U0HY dl {
+  position: absolute;
+  top: 16px;
+  color: white;
+}
+
+.component_2BhVN .buildingPrice_1U0HY dt {
+  box-sizing: border-box;
+  width: 103px;
+  display: inline-block;
+  margin-left: 12px;
+  text-align: left;
+  border: 42px;
+}
+
+.component_2BhVN .buildingPrice_1U0HY .buidlingT_GEBqy {
+  font-size: 13px;
+}
+
+.component_2BhVN .buildingPrice_1U0HY .buildingN_3Mouz {
+  font-size: 18px;
+}
+
+.component_2BhVN .buildingPrice_1U0HY .buildingU_dcS2J {
+  font-size: 12px;
+}
+
+.component_2BhVN .func_3AGS1 {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  width: 335px;
+  height: 118px;
+  box-shadow: 0px 0px 6px #B0ACB0;
+  border-radius: 10px;
+}
+
+.component_2BhVN .func_3AGS1 dl {
+  margin-top: 30px;
+}
+
+.component_2BhVN .func_3AGS1 dt {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.component_2BhVN .func_3AGS1 .icon1_OS568, .component_2BhVN .func_3AGS1 .icon2_ZwgxH, .component_2BhVN .func_3AGS1 .icon3_p750-, .component_2BhVN .func_3AGS1 .icon4_3hoaH {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 8px;
+}
+
+.component_2BhVN .func_3AGS1 .icon1_OS568 {
+  background-image: url(/build/img/air-look.png);
+}
+
+.component_2BhVN .func_3AGS1 .icon2_ZwgxH {
+  background-image: url(/build/img/720.png);
+}
+
+.component_2BhVN .func_3AGS1 .icon3_p750- {
+  background-image: url(/build/img/calc.png);
+  margin-left: 11px;
+}
+
+.component_2BhVN .func_3AGS1 .icon4_3hoaH {
+  background-image: url(/build/img/service.png);
+  margin-left: 6px;
+}
+
+.component_2BhVN .footer_2dXLA {
+  position: absolute;
+  top: 669px;
+  left: 20px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou {
+  color: black;
+  display: -webkit-flex;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 {
+  background-color: white;
+  width: 200px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .info_38lSx {
+  position: relative;
+  top: 13px;
+  left: 5px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .info_38lSx .tel_3o5NL {
+  font-size: 16px;
+  position: relative;
+  top: 9px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .profession_1qciU {
+  font-size: 12px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 p {
+  margin-top: 62px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 strong {
+  font-size: 20px;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .qrcode_2UlDQ {
+  background-color: white;
+  margin-left: 65px;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvaW5kZXhfMS4wLjAuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

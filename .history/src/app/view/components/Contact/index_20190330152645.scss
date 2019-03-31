@@ -1,0 +1,59 @@
+.component {
+  background: #fff;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  }
+  .func{
+    text-align: center;
+    ul {
+      margin: 20px 30px;
+      
+    }
+    dl,dd,dt{
+      display: inline;
+      box-shadow: 1px 1px blur #f00;
+    };
+    .icon1, .icon2, .icon3, .icon4 {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background-size: 80px;
+      background-position: center center;
+      margin: 5px;
+    };
+    .icon1{
+      background-image: url(../../../../assets/img/look.png);
+    };
+    .icon2{
+      background-image: url(../../../../assets/img/VR.png);
+    }
+    .icon3{
+     background-image: url(../../../../assets/img/calc.png);
+    }
+    .icon4{
+      background-image: url(../../../../assets/img/service.png);
+    }
+  };
+
+  .contact {
+    .info {
+      img{
+        float: left;
+        width: 64px;
+        height: 64px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
