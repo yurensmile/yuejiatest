@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as style from './index.scss';
 import ImgView from 'yuejia/component/ImgView';
-// import IconText from 'yuejia/_base/view/IconText';
+import IconText from 'yuejia/_base/view/IconText';
 interface Props {
   funcName: string[];
   name: string;

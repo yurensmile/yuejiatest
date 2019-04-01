@@ -45,10 +45,8 @@
     bottom: p2v(-34);
     .priceImg{
       position: relative;
-      width: 90vw;
-      height: 17.6vw;
-      margin-left: p2v(8);
-      border-radius: p2v(6);
+      width: p2v(345);
+      height: p2v(66);
     };
     dl {
       position: absolute;
@@ -57,13 +55,11 @@
     }
     dt {
       box-sizing: border-box;
-      width: 26.46667vw;
+      width: p2v(103);
       display: inline-block;
-      margin-left: 4.13333vw;
-      margin-top: p2v(-10);
+      margin-left: p2v(12);
       text-align: left;
       border: p2v(42);
-      line-height: 1.8;
     }
     .buidlingT{
       font-size: p2v(13);
@@ -102,11 +98,9 @@
     } 
     .icon1{
       background-image: url(../../../../assets/img/air-look.png);
-      margin-left: p2v(5);
     };
     .icon2{
       background-image: url(../../../../assets/img/720.png);
-      margin-left: p2v(5);
     };
     .icon3{
       background-image: url(../../../../assets/img/calc.png);
@@ -121,7 +115,6 @@
     position: absolute;
     top: p2v(669);
     left: p2v(20);
-    margin-top: p2v(-50);
     .contact{
       color: black;
       display: -webkit-flex;

@@ -102,11 +102,11 @@
     } 
     .icon1{
       background-image: url(../../../../assets/img/air-look.png);
-      margin-left: p2v(5);
+      margin-left: p2v(3);
     };
     .icon2{
       background-image: url(../../../../assets/img/720.png);
-      margin-left: p2v(5);
+      margin-left: p2v(3);
     };
     .icon3{
       background-image: url(../../../../assets/img/calc.png);
@@ -121,7 +121,6 @@
     position: absolute;
     top: p2v(669);
     left: p2v(20);
-    margin-top: p2v(-50);
     .contact{
       color: black;
       display: -webkit-flex;

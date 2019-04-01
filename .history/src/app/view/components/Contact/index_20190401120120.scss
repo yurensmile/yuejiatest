@@ -63,7 +63,7 @@
       margin-top: p2v(-10);
       text-align: left;
       border: p2v(42);
-      line-height: 1.8;
+      line-height: 1.5;
     }
     .buidlingT{
       font-size: p2v(13);
@@ -102,11 +102,9 @@
     } 
     .icon1{
       background-image: url(../../../../assets/img/air-look.png);
-      margin-left: p2v(5);
     };
     .icon2{
       background-image: url(../../../../assets/img/720.png);
-      margin-left: p2v(5);
     };
     .icon3{
       background-image: url(../../../../assets/img/calc.png);
@@ -121,7 +119,6 @@
     position: absolute;
     top: p2v(669);
     left: p2v(20);
-    margin-top: p2v(-50);
     .contact{
       color: black;
       display: -webkit-flex;

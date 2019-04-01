@@ -67,7 +67,7 @@ class App extends React.Component<any> {
       // </Model>
        <div>
          <Contact
-          funcName={['空中楼盘', 'VR看房', '房贷计算器', '专属服务']}
+          funcName={["空中楼盘", "VR看房", "房贷计算器", "专属服务"]}
           name="张美玲"
           profession="置业顾问"
           tel="138 9889 8743"

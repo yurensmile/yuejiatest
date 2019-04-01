@@ -31,48 +31,39 @@
       bottom: p2v(46);
       .tag{
         display: inline-block;
-        margin-right: p2v(8);
+        margin-right: 8px;
         background-color: #ff4a4a;
-        padding: p2v(4) p2v(6) p2v(5);
+        padding: 4px 6px 5px;
         box-sizing: border-box;
-        border-radius: p2v(3)
+        border-radius: 3px
       }
     }
   }
   .buildingPrice{
     position: absolute;
     left: p2v(10);
-    bottom: p2v(-34);
-    .priceImg{
-      position: relative;
-      width: 90vw;
-      height: 17.6vw;
-      margin-left: p2v(8);
-      border-radius: p2v(6);
-    };
+    bottom: -p2v(34);
     dl {
       position: absolute;
-      top: p2v(16);
+      top: 16px;
       color: white;
     }
     dt {
       box-sizing: border-box;
-      width: 26.46667vw;
+      width: 103px;
       display: inline-block;
-      margin-left: 4.13333vw;
-      margin-top: p2v(-10);
+      margin-left: 12px;
       text-align: left;
-      border: p2v(42);
-      line-height: 1.8;
+      border: 42px;
     }
     .buidlingT{
-      font-size: p2v(13);
+      font-size: 13px;
     }
     .buildingN{
-      font-size: p2v(18);
+      font-size: 18px;
     }
     .buildingU{
-      font-size: p2v(12);
+      font-size: 12px;
     }
   }
   .func{
@@ -81,47 +72,44 @@
     left: p2v(20);
     width: p2v(335);
     height: p2v(118);
-    -moz-box-shadow:p2v(0) p2v(0) p2v(6) #B0ACB0; -webkit-box-shadow:p2v(0) p2v(0) p2v(6) #B0ACB0; box-shadow:p2v(0) p2v(0) p2v(6) #B0ACB0;
-    border-radius: p2v(10);
+    -moz-box-shadow:0px 0px 6px #B0ACB0; -webkit-box-shadow:0px 0px 6px #B0ACB0; box-shadow:0px 0px 6px #B0ACB0;
+    border-radius: 10px;
     dl{
-      margin-top: p2v(30);
+      margin-top: 30px;
     };
     dt{
       display: inline-block;
-      margin-left: p2v(20);
+      margin-left: 20px;
     }
     .icon1, .icon2, .icon3, .icon4 {
       display: inline-block;
-      width: p2v(42);
-      height: p2v(42);
+      width: 42px;
+      height: 42px;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position-x: center;
       background-position-y: center;
-      margin-bottom: p2v(8);
+      margin-bottom: 8px;
     } 
     .icon1{
       background-image: url(../../../../assets/img/air-look.png);
-      margin-left: p2v(5);
     };
     .icon2{
       background-image: url(../../../../assets/img/720.png);
-      margin-left: p2v(5);
     };
     .icon3{
       background-image: url(../../../../assets/img/calc.png);
-      margin-left: p2v(11);
+      margin-left: 11px;
     };
     .icon4{
       background-image: url(../../../../assets/img/service.png);
-      margin-left: p2v(6);
+      margin-left: 6px;
     };
   }
   .footer{
     position: absolute;
-    top: p2v(669);
-    left: p2v(20);
-    margin-top: p2v(-50);
+    top: 669px;
+    left: 20px;
     .contact{
       color: black;
       display: -webkit-flex;
@@ -129,44 +117,34 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: p2v(60);
+      margin-bottom: 60px;
 
       .people{
         background-color: white;
-        width: p2v(200);
-        .peoImg{
-          display: inline-block;
-          border-radius: 50%;
-          vertical-align: top;
-          float: left;
-          width: p2v(66);
-          height: p2v(66);
-        };
+        width: 200px;
         .info{
           position: relative;
-          top: p2v(13);
-          left: p2v(5);
+          top: 13px;
+          left: 5px;
           .tel{
-            font-size: p2v(16);
+            font-size: 16px;
             position: relative;
-            top: p2v(9);
+            top: 9px;
           }
         };
         .profession{
-          font-size: p2v(12);
+          font-size: 12px;
         }
         p{
-          margin-top: p2v(62);
+          margin-top: 62px;
         }
         strong{
-          font-size: p2v(20);
+          font-size: 20px;
         }
       }
       .qrcode{
         background-color: white;
-        margin-left: p2v(65);
-        width: p2v(82);
-        height: p2v(111);
+        margin-left: 65px;
       }
     }
   }

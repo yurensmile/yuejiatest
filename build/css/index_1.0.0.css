@@ -680,106 +680,124 @@ blockquote {
   color: white;
 }
 
+.component_2BhVN .background_XGouM .buildingImg_1f6Rd {
+  width: 100vw;
+  height: 100vw;
+}
+
 .component_2BhVN .background_XGouM .buildingInfo_bZHeH {
   position: absolute;
-  left: 18px;
-  bottom: 46px;
+  left: 4.8vw;
+  bottom: 12.26667vw;
 }
 
 .component_2BhVN .background_XGouM .buildingInfo_bZHeH .tag_2rJRg {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 2.13333vw;
   background-color: #ff4a4a;
-  padding: 4px 6px 5px;
+  padding: 1.06667vw 1.6vw 1.33333vw;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 0.8vw;
 }
 
 .component_2BhVN .buildingPrice_1U0HY {
   position: absolute;
-  left: 10px;
-  bottom: -34px;
+  left: 2.66667vw;
+  bottom: -9.06667vw;
+}
+
+.component_2BhVN .buildingPrice_1U0HY .priceImg_2O7Gs {
+  position: relative;
+  width: 90vw;
+  height: 17.6vw;
+  margin-left: 2.13333vw;
+  border-radius: 1.6vw;
 }
 
 .component_2BhVN .buildingPrice_1U0HY dl {
   position: absolute;
-  top: 16px;
+  top: 4.26667vw;
   color: white;
 }
 
 .component_2BhVN .buildingPrice_1U0HY dt {
   box-sizing: border-box;
-  width: 103px;
+  width: 26.46667vw;
   display: inline-block;
-  margin-left: 12px;
+  margin-left: 4.13333vw;
+  margin-top: -2.66667vw;
   text-align: left;
-  border: 42px;
+  border: 11.2vw;
+  line-height: 1.8;
 }
 
 .component_2BhVN .buildingPrice_1U0HY .buidlingT_GEBqy {
-  font-size: 13px;
+  font-size: 3.46667vw;
 }
 
 .component_2BhVN .buildingPrice_1U0HY .buildingN_3Mouz {
-  font-size: 18px;
+  font-size: 4.8vw;
 }
 
 .component_2BhVN .buildingPrice_1U0HY .buildingU_dcS2J {
-  font-size: 12px;
+  font-size: 3.2vw;
 }
 
 .component_2BhVN .func_3AGS1 {
   position: absolute;
-  top: 420px;
-  left: 20px;
-  width: 335px;
-  height: 118px;
-  box-shadow: 0px 0px 6px #B0ACB0;
-  border-radius: 10px;
+  top: 112vw;
+  left: 5.33333vw;
+  width: 89.33333vw;
+  height: 31.46667vw;
+  box-shadow: 0vw 0vw 1.6vw #B0ACB0;
+  border-radius: 2.66667vw;
 }
 
 .component_2BhVN .func_3AGS1 dl {
-  margin-top: 30px;
+  margin-top: 8vw;
 }
 
 .component_2BhVN .func_3AGS1 dt {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 5.33333vw;
 }
 
 .component_2BhVN .func_3AGS1 .icon1_OS568, .component_2BhVN .func_3AGS1 .icon2_ZwgxH, .component_2BhVN .func_3AGS1 .icon3_p750-, .component_2BhVN .func_3AGS1 .icon4_3hoaH {
   display: inline-block;
-  width: 42px;
-  height: 42px;
+  width: 11.2vw;
+  height: 11.2vw;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  margin-bottom: 8px;
+  margin-bottom: 2.13333vw;
 }
 
 .component_2BhVN .func_3AGS1 .icon1_OS568 {
   background-image: url(/build/img/air-look.png);
+  margin-left: 1.33333vw;
 }
 
 .component_2BhVN .func_3AGS1 .icon2_ZwgxH {
   background-image: url(/build/img/720.png);
+  margin-left: 1.33333vw;
 }
 
 .component_2BhVN .func_3AGS1 .icon3_p750- {
   background-image: url(/build/img/calc.png);
-  margin-left: 11px;
+  margin-left: 2.93333vw;
 }
 
 .component_2BhVN .func_3AGS1 .icon4_3hoaH {
   background-image: url(/build/img/service.png);
-  margin-left: 6px;
+  margin-left: 1.6vw;
 }
 
 .component_2BhVN .footer_2dXLA {
   position: absolute;
-  top: 669px;
-  left: 20px;
+  top: 178.4vw;
+  left: 5.33333vw;
+  margin-top: -13.33333vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou {
@@ -795,41 +813,52 @@ blockquote {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 16vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 {
   background-color: white;
-  width: 200px;
+  width: 53.33333vw;
+}
+
+.component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .peoImg_AhAzz {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: top;
+  float: left;
+  width: 17.6vw;
+  height: 17.6vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .info_38lSx {
   position: relative;
-  top: 13px;
-  left: 5px;
+  top: 3.46667vw;
+  left: 1.33333vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .info_38lSx .tel_3o5NL {
-  font-size: 16px;
+  font-size: 4.26667vw;
   position: relative;
-  top: 9px;
+  top: 2.4vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 .profession_1qciU {
-  font-size: 12px;
+  font-size: 3.2vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 p {
-  margin-top: 62px;
+  margin-top: 16.53333vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .people_2c1Q2 strong {
-  font-size: 20px;
+  font-size: 5.33333vw;
 }
 
 .component_2BhVN .footer_2dXLA .contact_1qMou .qrcode_2UlDQ {
   background-color: white;
-  margin-left: 65px;
+  margin-left: 17.33333vw;
+  width: 21.86667vw;
+  height: 29.6vw;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvaW5kZXhfMS4wLjAuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

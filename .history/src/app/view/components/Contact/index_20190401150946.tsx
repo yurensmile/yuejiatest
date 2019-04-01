@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as style from './index.scss';
 import ImgView from 'yuejia/component/ImgView';
-// import IconText from 'yuejia/_base/view/IconText';
+import IconText from 'yuejia/_base/view/IconText';
 interface Props {
   funcName: string[];
   name: string;
@@ -71,14 +71,14 @@ class Contact extends React.Component<Props, State> {
         <div className={style.footer}>
           <div className={style.contact}>
             <div className={style.people}>
-              <img src="/src/assets/img/peo.png"
+              {/* <img src="/src/assets/img/peo.png"
                 className={style.peoImg}
-              />
-              {/* <IconText
+              /> */}
+              <IconText 
                 icon="/src/assets/img/peo.png"
                 iconCls={style.peoImg}
                 text="hello world"
-              /> */}
+              />
               <span className={style.info}>
                 <strong>{name}</strong>&nbsp;
                 <span className={style.profession}>{profession}</span><br/>
