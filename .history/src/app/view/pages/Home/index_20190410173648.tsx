@@ -43,19 +43,11 @@ class Home extends BasePage<Props, State, Match> {
   private contRef: React.RefObject<HTMLDivElement>;
 
   public componentDidMount(): void {
-    console.log('component did mount');
-    const cont = this.pageElemRef.current;
+    const cont = this.contRef.current;
     const img = this.imgRef.current;
-    console.log(cont);
     if (cont) {
-      console.log('cont is not null');
-      html2canvas(cont, {
-        allowTaint: false,
-        taintTest: true,
-        useCORS: true
-      }).then((canvas) => {
+      html2canvas(cont).then((canvas) => {
         const imgSrc = canvas.toDataURL('image/jpeg');
-        console.log(imgSrc);
         if (img) {
           img.src = imgSrc;
         }
@@ -94,6 +86,11 @@ class Home extends BasePage<Props, State, Match> {
               <View>
                 <Complete>
                   <div ref={this.contRef}>
+                    {/* <Contact
+                      name="张美玲"
+                      profession="置业顾问"
+                      tel="138 9889 8743"
+                    /> */}
                     <Con/>
                   </div>
                 </Complete>

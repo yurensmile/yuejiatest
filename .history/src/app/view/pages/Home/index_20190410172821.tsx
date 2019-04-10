@@ -26,7 +26,6 @@ class Home extends BasePage<Props, State, Match> {
     // this.handleTouchEnd = this.handleTouchEnd.bind(this);
     this.maskRef = React.createRef();
     this.imgRef = React.createRef();
-    this.contRef = React.createRef();
     this.init();
   }
 
@@ -40,22 +39,53 @@ class Home extends BasePage<Props, State, Match> {
   public pageName: string = '';
   private maskRef: React.RefObject<HTMLDivElement>;
   private imgRef: React.RefObject<HTMLImageElement>;
-  private contRef: React.RefObject<HTMLDivElement>;
+    // 按住屏幕开始的时间
+  // private startTime: number = 0;
+  //  按住屏幕结束的时间
+  // private endTime: number = 0 ;
+  // private timer: NodeJS.Timer | number | undefined;
+
+  // private handleTouchStart(): void {
+  //   console.log('touch start');
+  //   const pageHome = this.pageElemRef.current;
+  //   const mask = this.maskRef.current;
+  //   const img = this.imgRef.current;
+  //   this.startTime = +new Date();
+  //   this.timer = setTimeout(() => {
+  //     console.log('this is long click');
+  //     if (pageHome && mask) {
+  //       html2canvas(pageHome, {
+  //       }).then((canvas: any) => {
+  //         const imgSrc = canvas.toDataURL('image/jpeg');
+  //         console.log(imgSrc);
+  //         if (img) {
+  //         img.src = imgSrc;
+  //         }
+  //         // mask.appendChild(canvas);
+  //         this.setState({
+  //           maskStyle: {
+  //             display: 'block'
+  //           }
+  //         });
+  //       });
+  //     }
+  //   }, 700);
+  // }
+
+  // private handleTouchEnd(): void {
+  //   this.endTime = +new Date();
+  //   clearTimeout(this.timer as NodeJS.Timer);
+  //   if (this.endTime - this.startTime < 700) {
+  //     console.log('this is click');
+  //   }
+  // }
 
   public componentDidMount(): void {
-    console.log('component did mount');
-    const cont = this.pageElemRef.current;
+    const pageHome = this.pageElemRef.current;
     const img = this.imgRef.current;
-    console.log(cont);
-    if (cont) {
-      console.log('cont is not null');
-      html2canvas(cont, {
-        allowTaint: false,
-        taintTest: true,
-        useCORS: true
-      }).then((canvas) => {
+    if (pageHome) {
+      html2canvas(pageHome).then((canvas) => {
         const imgSrc = canvas.toDataURL('image/jpeg');
-        console.log(imgSrc);
         if (img) {
           img.src = imgSrc;
         }
@@ -70,9 +100,10 @@ class Home extends BasePage<Props, State, Match> {
 
   public render(): JSX.Element {
     const imgStyle = {
-      width: '100vw',
-      height: '100vh',
-      // margin: '10vh auto',
+      width: '70vw',
+      height: '80vh',
+      backgroundColor: 'red',
+      margin: '10vh auto',
     };
     return (
       <div
@@ -93,7 +124,12 @@ class Home extends BasePage<Props, State, Match> {
             <Page pageId={this.pageId}>
               <View>
                 <Complete>
-                  <div ref={this.contRef}>
+                  <div>
+                    {/* <Contact
+                      name="张美玲"
+                      profession="置业顾问"
+                      tel="138 9889 8743"
+                    /> */}
                     <Con/>
                   </div>
                 </Complete>

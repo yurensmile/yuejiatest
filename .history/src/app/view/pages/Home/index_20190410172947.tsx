@@ -26,7 +26,6 @@ class Home extends BasePage<Props, State, Match> {
     // this.handleTouchEnd = this.handleTouchEnd.bind(this);
     this.maskRef = React.createRef();
     this.imgRef = React.createRef();
-    this.contRef = React.createRef();
     this.init();
   }
 
@@ -40,22 +39,13 @@ class Home extends BasePage<Props, State, Match> {
   public pageName: string = '';
   private maskRef: React.RefObject<HTMLDivElement>;
   private imgRef: React.RefObject<HTMLImageElement>;
-  private contRef: React.RefObject<HTMLDivElement>;
 
   public componentDidMount(): void {
-    console.log('component did mount');
-    const cont = this.pageElemRef.current;
+    const pageHome = this.pageElemRef.current;
     const img = this.imgRef.current;
-    console.log(cont);
-    if (cont) {
-      console.log('cont is not null');
-      html2canvas(cont, {
-        allowTaint: false,
-        taintTest: true,
-        useCORS: true
-      }).then((canvas) => {
+    if (pageHome) {
+      html2canvas(pageHome).then((canvas) => {
         const imgSrc = canvas.toDataURL('image/jpeg');
-        console.log(imgSrc);
         if (img) {
           img.src = imgSrc;
         }
@@ -93,7 +83,12 @@ class Home extends BasePage<Props, State, Match> {
             <Page pageId={this.pageId}>
               <View>
                 <Complete>
-                  <div ref={this.contRef}>
+                  <div>
+                    {/* <Contact
+                      name="张美玲"
+                      profession="置业顾问"
+                      tel="138 9889 8743"
+                    /> */}
                     <Con/>
                   </div>
                 </Complete>

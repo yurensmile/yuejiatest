@@ -49,11 +49,7 @@ class Home extends BasePage<Props, State, Match> {
     console.log(cont);
     if (cont) {
       console.log('cont is not null');
-      html2canvas(cont, {
-        allowTaint: false,
-        taintTest: true,
-        useCORS: true
-      }).then((canvas) => {
+      html2canvas(cont).then((canvas) => {
         const imgSrc = canvas.toDataURL('image/jpeg');
         console.log(imgSrc);
         if (img) {
