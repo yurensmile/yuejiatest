@@ -1,0 +1,171 @@
+.component {
+  background: #fff;
+  position: relative;
+  dl, dt, dd, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  };
+  ol, ul {
+    list-style: none;
+  };
+  li {
+    display: inline;
+  };
+  .background {
+    color: white;
+    // position: relative;
+    .buildingImg{
+      width: rem(750);
+      height: rem(750);
+    };
+    .buildingInfo{
+      position: absolute;
+      left: rem(36);
+      bottom: rem(92);
+      .tag{
+        display: inline-block;
+        margin-right: rem(16);
+        background-color: #ff4a4a;
+        padding: rem(8) rem(12) rem(10);
+        box-sizing: border-box;
+        border-radius: rem(6)
+      }
+    }
+  }
+  .buildingPrice{
+    position: absolute;
+    left: rem(20);
+    bottom: rem(-68);
+    .priceImg{
+      position: relative;
+      width: 90vw;
+      height: 17.6vw;
+      margin-left: rem(16);
+      border-radius: rem(12);
+    };
+    dl {
+      position: absolute;
+      top: rem(32);
+      color: white;
+    }
+    dt {
+      box-sizing: border-box;
+      width: 26.46667vw;
+      display: inline-block;
+      margin-left: 4.13333vw;
+      margin-top: rem(-20);
+      text-align: left;
+      border: rem(84);
+      line-height: 1.8;
+    }
+    .buidlingT{
+      font-size: rem(26);
+    }
+    .buildingN{
+      font-size: rem(36);
+    }
+    .buildingU{
+      font-size: rem(24);
+    }
+  }
+  .func{
+    position: absolute;
+    top: rem(840);
+    left: rem(40);
+    width: rem(670);
+    height: rem(236);
+    -moz-box-shadow:rem(0) rem(0) rem(12) #B0ACB0; -webkit-box-shadow:rem(0) rem(0) rem(12) #B0ACB0; box-shadow:rem(0) rem(0) rem(12) #B0ACB0;
+    border-radius: rem(20);
+    dl{
+      margin-top: rem(60);
+    };
+    dt{
+      display: inline-block;
+      margin-left: rem(40);
+    }
+    .icon1, .icon2, .icon3, .icon4 {
+      display: inline-block;
+      width: rem(84);
+      height: rem(84);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+      margin-bottom: rem(16);
+    } 
+    .icon1{
+      background-image: url(../../../../assets/img/air-look.png);
+      margin-left: rem(10);
+    };
+    .icon2{
+      background-image: url(../../../../assets/img/720.png);
+      margin-left: rem(10);
+    };
+    .icon3{
+      background-image: url(../../../../assets/img/calc.png);
+      margin-left: rem(22);
+    };
+    .icon4{
+      background-image: url(../../../../assets/img/service.png);
+      margin-left: rem(12);
+    };
+  }
+  .footer{
+    position: absolute;
+    top: rem(1338);
+    left: rem(40);
+    margin-top: rem(-100);
+    .contact{
+      color: black;
+      display: -webkit-flex;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: rem(120);
+
+      .people{
+        background-color: white;
+        width: rem(400);
+        .peoImg{
+          display: inline-block;
+          border-radius: 50%;
+          vertical-align: top;
+          float: left;
+          width: rem(132);
+          height: rem(132);
+        };
+        .info{
+          position: relative;
+          top: rem(26);
+          left: rem(10);
+          .tel{
+            font-size: rem(32);
+            position: relative;
+            top: rem(18);
+          }
+        };
+        .profession{
+          font-size: rem(24);
+        }
+        p{
+          margin-top: rem(124);
+        }
+        strong{
+          font-size: rem(40);
+        }
+      }
+      .qrcode{
+        background-color: white;
+        margin-left: rem(100);
+        width: rem(164);
+        height: rem(222);
+      }
+    }
+  }
+
+}

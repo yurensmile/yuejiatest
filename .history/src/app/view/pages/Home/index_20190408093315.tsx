@@ -4,6 +4,7 @@ import BasePage, { PageProps } from 'yuejia/app/Page';
 import Page from 'yuejia/component/Page';
 import View from 'yuejia/component/View';
 import { Context } from 'yuejia/component/Model';
+// import Contact from '../../components/Contact'
 
 interface Match {
 }
@@ -16,13 +17,13 @@ const Complete = View.Complete;
 const Empty = View.Empty;
 const Fail = View.Fail;
 
-class Nav extends BasePage<Props, State, Match> {
+class Home extends BasePage<Props, State, Match> {
   constructor(props: PageProps<Match>, state: State) {
     super(props, state);
     this.init();
   }
 
-  public displayName: string = 'Nav';
+  public displayName: string = 'Home';
   public pageName: string = '';
 
   public render(): JSX.Element {
@@ -41,6 +42,7 @@ class Nav extends BasePage<Props, State, Match> {
                 <Fail>
                   <div>错误页面</div>
                 </Fail>
+                <div>this is a test</div>
               </View>
             </Page>
           )}
@@ -50,4 +52,4 @@ class Nav extends BasePage<Props, State, Match> {
   }
 }
 
-export default Nav;
+export default Home;
