@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "core-js": "^2.5.1",
-    "html2canvas": "^1.0.0-rc.1",
+    "html2canvas": "^1.0.0-rc.0",
     "react-loadable": "^5.3.1",
     "webpack-dev-server": "^3.2.1",
     "yuejia": "^0.8.31",

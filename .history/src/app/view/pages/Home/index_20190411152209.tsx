@@ -21,7 +21,7 @@ const Fail = View.Fail;
 class Home extends BasePage<Props, State, Match> {
   constructor(props: PageProps<Match>, state: State) {
     super(props, state);
-    // this.imgRef = React.createRef();
+    this.imgRef = React.createRef();
     this.contRef = React.createRef();
     this.init();
   }

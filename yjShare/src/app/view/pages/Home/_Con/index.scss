@@ -1,0 +1,184 @@
+.component {
+  height: rem(1530);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  .back{
+    width: rem(750);
+    height: rem(750);
+    background-image: url(../../../../../assets/img/building.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .info{
+      color: white;
+      margin-left: rem(38);
+      margin-top: rem(522);
+    }
+    .buildName{
+      width: rem(234);
+      height: rem(38);
+      font-family: PingFang-SC-Heavy;
+      font-size: rem(40);
+      letter-spacing: rem(-1);
+      color: #fefefe;
+    }
+    .buildTag{
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: #ff4a4a;
+      border-radius: rem(4);
+      font-family: PingFang-SC-Medium;
+      font-size: rem(25);
+      letter-spacing: rem(0);
+      margin-right: rem(16);
+      margin-top: rem(20);
+      padding: rem(10);
+      color: #ffffff;
+    }
+    .position{
+      font-family: PingFang-SC-Regular;
+      font-size: rem(26);
+      line-height: rem(30);
+      letter-spacing: rem(0);
+      margin-top: rem(16);
+      color: #ffffff;
+    }
+    .price{
+      width: rem(672);
+      height: rem(136);
+      background: url(../../../../../assets/img/back.png);
+      background-size: rem(672) rem(136);
+      box-shadow: rem(0) rem(6) rem(21) rem(0) 
+        rgba(255, 55, 55, 0.29);
+      border-radius: rem(6);
+      margin-top: rem(20);
+      display: flex;
+      justify-content: space-around;
+      .name{
+        font-family: PingFang-SC-Regular;
+        font-size: rem(26);
+        line-height: rem(22);
+        letter-spacing: rem(0);
+        color: #ffffff;
+      }
+      .num{
+        font-family: PingFang-SC-Bold;
+        font-size: rem(35);
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: rem(36);
+        letter-spacing: rem(-1);
+        color: #ffffff;
+        margin-top: rem(-6);
+      }
+    }
+  }
+  .cont{
+    width: rem(750);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .peo{
+      display: flex;
+      flex-direction: column;
+      margin-top: rem(196);
+      margin-bottom: rem(40);
+      .peoInfo{
+        margin-left: rem(38);
+        margin-right: rem(42);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        .peoDes{
+           color: black;
+           display: flex;
+           align-items: center;
+        }
+        .peoImg{
+          width: rem(133);
+          height: rem(131);
+          border-radius: 50%;
+          background-color: #cfcfcf;
+        }
+        .peoName{
+          font-family: PingFang-SC-Heavy;
+          font-size: rem(40);
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: rem(-1);
+          color: #000000;
+        }
+        .peoPro{
+          font-family: PingFang-SC-Regular;
+          font-size: rem(24);
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: rem(0);
+          color: #000000;
+        }
+        .qrCode{
+          width: rem(157);
+          height: rem(154);
+          background-image: url(../../../../../assets/img/qrcode.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      .footer{
+        margin-left: rem(38);
+        margin-right: rem(42);
+        margin-top: rem(46);
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        .footer1{
+          font-size: rem(26);
+          letter-spacing: rem(0);
+          color: #323232;
+        }
+        .footer2{
+          font-size: rem(24);
+          letter-spacing: rem(0);
+          color: #323232;
+        }
+      }
+    }
+    .func{
+      color: white;
+      margin-top: rem(90); 
+      margin-left: rem(38);
+      .wrapper{
+        width: rem(672);
+        height: rem(236);
+	      background-color: #ffffff;
+	      box-shadow: rem(0) rem(6) rem(21) rem(0) 
+		    rgba(207, 207, 207, 0.29);
+	      border-radius: rem(6);
+	      border: solid rem(1) #eeeeee;
+        .iconWrapper{
+          margin-top: rem(58);
+          display: flex;
+          justify-content: space-around;
+        }
+        .icon{
+          width: rem(84);
+          height: rem(84);
+          background-blend-mode: normal, 
+            normal;
+          box-shadow: rem(0) rem(4) rem(30) rem(0) 
+            rgba(0, 0, 0, 0.06);
+          border-radius: rem(30); 
+        }
+        .text{
+          font-family: PingFang-SC-Medium;
+          font-size: rem(26);
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: rem(0);
+          color: #749dff;
+          margin-top: rem(14);
+        }
+      }
+    }
+  }
+}

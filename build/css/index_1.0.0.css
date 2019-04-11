@@ -669,7 +669,6 @@ blockquote {
   z-index: 9999;
 }
 .component_3m4i3 {
-  height: 54.64286rem;
   background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -678,6 +677,8 @@ blockquote {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: -1;
 }
 
 .component_3m4i3 .back_O8BXy {
@@ -893,8 +894,6 @@ blockquote {
 .component_3m4i3 .cont_3egk7 .func_3m_Zv .wrapper_1FXGo .icon_3d_8d {
   width: 3rem;
   height: 3rem;
-  background-blend-mode: normal,  normal;
-  box-shadow: 0rem 0.14286rem 1.07143rem 0rem rgba(0, 0, 0, 0.06);
   border-radius: 1.07143rem;
 }
 

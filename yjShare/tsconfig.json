@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "lib": ["dom", "scripthost", "es5", "es2015"]
+    },
+    "exclude": [
+        ".history",
+        ".vscode",
+        "dist",
+        "typings"
+    ],
+    "include": [
+        "./src",
+        "node_modules/yuejia",
+        "node_modules/urlsearchparams"
+    ],
+    "files": [
+        "./src/entry/index.tsx",
+        "./webpack.config.ts"
+        // "./test/index.ts"
+    ]
+  }

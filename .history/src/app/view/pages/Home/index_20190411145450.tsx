@@ -5,8 +5,8 @@ import Page from 'yuejia/component/Page';
 import View from 'yuejia/component/View';
 import { Context } from 'yuejia/component/Model';
 // import Contact from '../../components/Contact';
-import Con from '../Home/Con';
-// import * as html2canvas from 'html2canvas';
+import Con from '../Home/_Con';
+import * as html2canvas from 'html2canvas';
 interface Match {
 }
 interface Props {
@@ -21,41 +21,51 @@ const Fail = View.Fail;
 class Home extends BasePage<Props, State, Match> {
   constructor(props: PageProps<Match>, state: State) {
     super(props, state);
-    // this.imgRef = React.createRef();
+    this.imgRef = React.createRef();
     this.contRef = React.createRef();
     this.init();
   }
 
   public displayName: string = 'Home';
   public pageName: string = '';
-  // private imgRef: React.RefObject<HTMLImageElement>;
+  private imgRef: React.RefObject<HTMLImageElement>;
   private contRef: React.RefObject<HTMLDivElement>;
 
-  // public componentDidMount(): void {
-  //   const cont = this.contRef.current;
-  //   const img = this.imgRef.current;
-  //   setTimeout(() => {
-  //     if (cont) {
-  //       html2canvas(cont, {
-  //         allowTaint: true,
-  //         taintTest: true,
-  //         useCORS: true
-  //       }).then((canvas) => {
-  //         const imgSrc = canvas.toDataURL('image/jpeg');
-  //         if (img) {
-  //           img.src = imgSrc;
-  //         }
-  //       });
-  //     }
-  //   }, 1000);
-  // }
+  public componentDidMount(): void {
+    const cont = this.pageElemRef.current;
+    const img = this.imgRef.current;
+    setTimeout(() => {
+      if (cont) {
+        html2canvas(cont, {
+          allowTaint: true,
+          taintTest: true,
+          useCORS: true
+        }).then((canvas) => {
+          const imgSrc = canvas.toDataURL('image/jpeg');
+          if (img) {
+            img.src = imgSrc;
+          }
+          this.setState ({
+            maskStyle: {
+              display: 'block'
+            }
+          });
+        });
+      }
+    }, 1000);
+  }
 
   public render(): JSX.Element {
+    const imgStyle = {
+      width: '100vw',
+      height: '100vh',
+    };
     return (
       <div
         className={style.page}
         ref={this.pageElemRef}
       >
+        <img src="" alt="截图显示" style={imgStyle} ref={this.imgRef}/>
         <Context.Consumer>
           {() => (
             <Page pageId={this.pageId}>

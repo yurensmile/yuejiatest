@@ -6,7 +6,7 @@ import View from 'yuejia/component/View';
 import { Context } from 'yuejia/component/Model';
 // import Contact from '../../components/Contact';
 import Con from '../Home/Con';
-// import * as html2canvas from 'html2canvas';
+import * as html2canvas from 'html2canvas';
 interface Match {
 }
 interface Props {
@@ -21,14 +21,14 @@ const Fail = View.Fail;
 class Home extends BasePage<Props, State, Match> {
   constructor(props: PageProps<Match>, state: State) {
     super(props, state);
-    // this.imgRef = React.createRef();
+    this.imgRef = React.createRef();
     this.contRef = React.createRef();
     this.init();
   }
 
   public displayName: string = 'Home';
   public pageName: string = '';
-  // private imgRef: React.RefObject<HTMLImageElement>;
+  private imgRef: React.RefObject<HTMLImageElement>;
   private contRef: React.RefObject<HTMLDivElement>;
 
   // public componentDidMount(): void {
@@ -51,11 +51,19 @@ class Home extends BasePage<Props, State, Match> {
   // }
 
   public render(): JSX.Element {
+    const imgStyle = {
+      width: '100%',
+      height: '100%',
+      
+    };
     return (
       <div
         className={style.page}
         ref={this.pageElemRef}
       >
+        <div>
+          <img src="" alt="截图显示" style={imgStyle} ref={this.imgRef}/>
+        </div>
         <Context.Consumer>
           {() => (
             <Page pageId={this.pageId}>
